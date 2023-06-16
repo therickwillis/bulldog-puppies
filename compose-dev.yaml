@@ -1,9 +1,9 @@
 services:
   app:
+    build: .
     entrypoint:
     - sleep
     - infinity
-    image: docker/dev-environments-javascript:stable-1
     init: true
     volumes:
     - type: bind
