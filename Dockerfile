@@ -1,8 +1,9 @@
 # Specify the base image
-FROM node:latest
+FROM node:18.16.0-slim
 
 # Install Python
-RUN apt-get update && apt-get install -y python
+RUN apt-get update && \
+    apt-get install -y python3 python3-pip
 
 # Set the working directory
 # WORKDIR /app
